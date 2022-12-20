@@ -1,0 +1,57 @@
+.Comment {
+    align-items: flex-start;
+
+    .right-box {
+        width: 100%;
+        gap: 1rem;
+
+        .box-comment {
+            background: var(--gray-700);
+            padding: 1rem;
+            border-radius: 8px;
+            width: 100%;
+            justify-content: space-between;
+
+            .box-comment-info {
+                gap: 2rem;
+
+                .profile-info {
+                    gap: 0.5rem;
+
+                    strong {
+                        font-size: 0.875rem;
+                        color: var(--gray-100);
+                    }
+
+                    span {
+                        font-size: 0.75rem;
+                        color: var(--gray-400);
+                    }
+                }
+
+                p {
+                    margin-bottom: 0.5rem;
+                    color: var(--gray-300);
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .footer-comment-box {
+            button {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 0.5rem;
+                border-radius: 8px;
+                color: var(--gray-100);
+
+                .number::before {
+                    content: "\2022";
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+}

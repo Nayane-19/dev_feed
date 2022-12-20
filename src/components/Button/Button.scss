@@ -33,11 +33,10 @@
     &.full {
         color: var(--white);
         background: var(--blue-500);
+        border: none;
 
         &:hover {
-            color: var(--blue-500);
-            border: 1px solid var(--blue-500);
-            background: transparent;
+            background: var(--blue-300);
         }
     }
 }

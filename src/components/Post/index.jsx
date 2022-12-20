@@ -1,6 +1,8 @@
 import "./Post.scss"
 import Profile from "../../assets/img/profile.png"
 import { Button } from "../Button"
+import { Comments } from "../Comments"
+import { Avatar } from "../Avatar"
 
 export function Post() {
     return (
@@ -8,7 +10,7 @@ export function Post() {
             <header>
                 <div className="info-profile">
                     <div className="profile">
-                        <img src={Profile} alt="profile image" />
+                        <Avatar src={Profile} />
                     </div>
                     <div className="info-name">
                         <strong>Nayane Santos</strong>
@@ -24,13 +26,14 @@ export function Post() {
                 <p>
                     <strong>#novoprojeto</strong>
                     <strong>#nlw</strong>
-                    <strong>#rocketseat </strong>
+                    <strong>#rocketseat</strong>
                 </p>
             </div>
             <form className="feedback">
                 <textarea rows="3" placeholder="Deixe seu comentário aqui" />
                 <Button type="submit">Publicar</Button>
             </form>
+            <Comments />
         </article>
     )
 }

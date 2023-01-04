@@ -3,8 +3,11 @@ import './global.css'
 import "./App.scss"
 import { Sidebar } from './components/Sidebar'
 import { Post } from './components/Post'
+import { posts } from './mocks/PostMock'
 
 function App() {
+
+  const postsPublish = posts
 
   return (
     <div className="App">
@@ -13,8 +16,11 @@ function App() {
       <div className="wrapper">
           <Sidebar />
         <main>
-          <Post />
-          <Post />
+          {postsPublish.map(post => {
+            return (
+              <Post post={post} key={post.id} />
+            )
+          })}
         </main>
       </div>
     </div>

@@ -2,6 +2,7 @@
 
 <h3 align="center">Home</h3>
 <p align="center"><img src="https://media.giphy.com/media/hKA0T1bHLiPRwYxYKc/giphy.gif"/></p>
+<p align="center"><img src="https://media.giphy.com/media/UuCCiIjvihYfDHT6Fh/giphy.gif"/></p>
 
 <h3>3. Tecnologias utilizadas</h3>
 <ul>
